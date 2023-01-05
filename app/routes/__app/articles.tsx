@@ -1,7 +1,7 @@
-import { Card } from "~/components/Card";
+// import { Card } from "~/components/Card";
 import { SimpleLayout } from "~/components/SimpleLayout";
 // import { getAllArticles } from '~/lib/getAllArticles'
-import { formatDate } from "~/lib/formatDate";
+// import { formatDate } from "~/lib/formatDate";
 
 // function Article({ article }) {
 //   return (

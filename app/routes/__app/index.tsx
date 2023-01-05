@@ -1,10 +1,11 @@
-import { Link, useLoaderData } from "@remix-run/react";
-import type { MetaFunction } from "@remix-run/node";
+// import { useLoaderData } from "@remix-run/react";
+// import { Link, useLoaderData } from "@remix-run/react";
+// import type { MetaFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import clsx from "clsx";
 
 import { Button } from "~/components/Button";
-import { Card } from "~/components/Card";
+// import { Card } from "~/components/Card";
 import { Container } from "~/components/Container";
 import {
   TwitterIcon,
@@ -19,34 +20,34 @@ import logoCareMessage from "~/images/logos/caremessage.png";
 import logoAvenueCode from "~/images/logos/avenue-code.png";
 // import { generateRssFeed } from "~/lib/generateRssFeed";
 import type {
-  Article as ArticleT,
+  // Article as ArticleT,
   ArticleWithComponent,
 } from "~/lib/getAllArticles";
-import { getAllArticles } from "~/lib/getAllArticles";
-import { formatDate } from "~/lib/formatDate";
+// import { getAllArticles } from "~/lib/getAllArticles";
+// import { formatDate } from "~/lib/formatDate";
 
-function MailIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-      {...props}
-    >
-      <path
-        d="M2.75 7.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
-        className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
-      />
-      <path
-        d="m4 6 6.024 5.479a2.915 2.915 0 0 0 3.952 0L20 6"
-        className="stroke-zinc-400 dark:stroke-zinc-500"
-      />
-    </svg>
-  );
-}
+// function MailIcon(props: React.SVGProps<SVGSVGElement>) {
+//   return (
+//     <svg
+//       viewBox="0 0 24 24"
+//       fill="none"
+//       strokeWidth="1.5"
+//       strokeLinecap="round"
+//       strokeLinejoin="round"
+//       aria-hidden="true"
+//       {...props}
+//     >
+//       <path
+//         d="M2.75 7.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
+//         className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
+//       />
+//       <path
+//         d="m4 6 6.024 5.479a2.915 2.915 0 0 0 3.952 0L20 6"
+//         className="stroke-zinc-400 dark:stroke-zinc-500"
+//       />
+//     </svg>
+//   );
+// }
 
 function BriefcaseIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
@@ -84,9 +85,9 @@ function ArrowDownIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-type ArticleProps = {
-  article: ArticleT;
-};
+// type ArticleProps = {
+//   article: ArticleT;
+// };
 
 // function Article({ article }: ArticleProps) {
 //   return (
@@ -350,7 +351,7 @@ export const loader = async () => {
 };
 
 export default function Home() {
-  const { articles } = useLoaderData<typeof loader>();
+  // const { articles } = useLoaderData<typeof loader>();
 
   return (
     <>

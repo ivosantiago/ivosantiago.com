@@ -1,5 +1,3 @@
-import type { LinkProps } from "@remix-run/react";
-import { Link } from "@remix-run/react";
 import clsx from "clsx";
 
 const variantStyles = {
