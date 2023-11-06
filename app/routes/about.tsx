@@ -1,3 +1,4 @@
+import type { MetaFunction } from "@remix-run/react";
 import clsx from "clsx";
 
 import { Container } from "~/components/Container";
@@ -42,6 +43,17 @@ function MailIcon(props: React.SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "About - Ivo Santiago" },
+    {
+      name: "description",
+      content:
+        "Hello 👋 I'm Ivo, I live in Brazil, where I code for fun and profit.",
+    },
+  ];
+};
 
 export default function About() {
   return (
