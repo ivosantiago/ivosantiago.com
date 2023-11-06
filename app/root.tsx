@@ -31,8 +31,7 @@ export const meta: MetaFunction = () => {
     { title: "Ivo Santiago" },
     {
       name: "description",
-      content:
-        "Hello 👋 I'm Ivo, I live in Brazil, where I code for fun and profit.",
+      content: "Hello 👋 I'm Ivo, a software engineer living in Brazil.",
     },
   ];
 };
