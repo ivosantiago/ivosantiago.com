@@ -1,4 +1,3 @@
-import type { MetaFunction } from "@remix-run/node";
 import clsx from "clsx";
 import { Container } from "~/components/Container";
 import {
@@ -13,16 +12,6 @@ import logoHekima from "~/images/logos/hekima.png";
 import logoGoodTime from "~/images/logos/goodtime.png";
 import logoCareMessage from "~/images/logos/caremessage.png";
 import logoAvenueCode from "~/images/logos/avenue-code.png";
-
-export const meta: MetaFunction = () => {
-  return [
-    { title: "Ivo Santiago" },
-    {
-      name: "description",
-      content: "Hello 👋 I'm Ivo, a software engineer based in Brazil.",
-    },
-  ];
-};
 
 type SocialLinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
   icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
@@ -134,7 +123,7 @@ function Resume() {
 
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+      <h2 className="flex flex-1 items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Work</span>
       </h2>
@@ -238,7 +227,7 @@ function Photos() {
             key={image.alt}
             className={clsx(
               "relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl",
-              rotations[imageIndex % rotations.length]
+              rotations[imageIndex % rotations.length],
             )}
           >
             <img
