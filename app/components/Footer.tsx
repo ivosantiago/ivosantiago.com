@@ -25,14 +25,14 @@ export function Footer() {
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
               <div className="flex gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">
                 <NavLink to="/about">About</NavLink>
-                {/* <NavLink to="/projects">Projects</NavLink> */}
                 <NavLink to="/uses">Uses</NavLink>
                 <NavLink to="/now">Now</NavLink>
               </div>
-              <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Ivo Santiago. All rights
-                reserved.
-              </p>
+              <div className="text-right text-sm text-zinc-400 dark:text-zinc-500">
+                <p>&copy; {new Date().getFullYear()} Ivo Santiago.</p>
+                <p>All rights reserved.</p>
+                <p>This site does not track you. 🍪</p>
+              </div>
             </div>
           </Container.Inner>
         </div>
