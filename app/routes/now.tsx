@@ -79,6 +79,12 @@ export default function Now() {
           <div className="space-y-20">
             <NowSection title="Books">
               <Activity
+                href="https://www.audible.com/pd/Staff-Engineer-Audiobook/B097CNMWWDn"
+                eyebrow="Will Larson"
+                title="Staff Engineer"
+                description="As I'm starting to consider transitioning to a more senior role and many people recommended this book I'm listening to it on Audible. There are great lessons from the very beginning."
+              />
+              <Activity
                 href="https://sive.rs/n"
                 eyebrow="Derick Sivers"
                 title="Hell Yeah or No"
@@ -102,36 +108,15 @@ export default function Now() {
                 cta="Check it out"
               />
             </NowSection>
-            {/* <NowSection title="Tech">
+            <NowSection title="Tech">
               <Activity
-                href="https://www.akitaonrails.com/2023/03/02/akitando-139-entendendo-como-containers-funcionam"
-                eyebrow="Docker & containers"
-                title="Obsessed with containers"
-                description="Many times in my dev life I see myself on the same situation: I’ve learned a lot about the theory of something but little about practicing it. Docker and containers are one of those things. I came across 2 videos from Akita about containers https://www.akitaonrails.com/2023/03/02/akitando-139-entendendo-como-containers-funcionam and https://www.akitaonrails.com/2023/12/16/akitando-149-configurando-docker-compose-postgres-com-testes-de-carga-parte-final-da-rinha-de-backend - highly recommend. Both in Portuguese - explaining how it works under the hood and in practice. I still have some questions on when to reach for it: Should it be used on development or just prod? Should I have separated files for prod and dev environments? What is the the point in a project when it should be considered? Because I want to try it myself I’m setting up a side project using it just to see the results. Any tips? Please send me a message."
-                cta="Akita's website"
-              />
-              <Activity
-                href="https://mdxjs.com/"
-                eyebrow="Design touches"
-                title='MDX "this site does not track you" footer'
-                description="I was looking for something to create a blog section for the website and found MDX. Loved their website footer where it says “this site does not track you”. I’m sick of accepting cookies. They are delicious but not good for my diet. 🍪"
-                cta="MDX's website"
+                href="https://laracasts.com/"
+                eyebrow="Old language, new framework"
+                title="Learning Laravel"
+                description="I was looking for something new to learn since I'm mostly working with React, Node.js and TypeScript. I decided to give Laravel a try. Even tho I've done PHP projects before it was a long time ago so I decided to follow the entire 'Learn Laravel Path' on Laracast. It's been a lot of fun. I'm also considering to write about it on the blog."
+                cta="Laracast website"
               />
             </NowSection>
-            <NowSection title="Random thoughts">
-              <Activity
-                href="#"
-                eyebrow="Books notes page"
-                title="Should I add a books page to the site?"
-                description="Following Derick Sivers track I’m considering starting a [books notes page](https://sive.rs/book). It would force myself to write some thoughts about each book and help to retain more knowledge."
-              />
-              <Activity
-                href="#"
-                eyebrow="Plans for 2024"
-                title="Reflection on 2023 and plans for 2024"
-                description='I don’t do resolutions for new year but I do like to reflect on what I did and think about what I want to do. Last year was all about Noah. Learning to be a father is a never ending task for sure but I feel like I know a couple things now. Both about me and him. This year I want to go back to myself a little more. Not in a selfish way but focusing on the things I want to learn and do. Kinda like the flight attendants say on every flight “put your mask first".'
-              />
-            </NowSection> */}
           </div>
         </div>
       </Container>
