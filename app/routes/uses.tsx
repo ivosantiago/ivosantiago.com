@@ -60,9 +60,10 @@ export default function Uses() {
               big monitor and it was cheap. I don't think I would rebuy it. I'm
               looking for a new monitor.
             </Tool>
-            <Tool title="Bose QuietComfort 35 II">
-              The noise canceling of this headphone is awesome. I use it all day
-              long. When flying, it blocks the noise of the airplane perfectly.
+            <Tool title="AirPods Pro 2">
+              I was very skeptical about this earbuds but it was a great
+              surprise so far. I use it all day long, the noise canceling is
+              perfect.
             </Tool>
             <Tool title="Keychron K2">
               I like a lot the brown switches. The tactile feedback of this
@@ -78,7 +79,7 @@ export default function Uses() {
               This is a height-adjustable desk. I like it because it's easy to
               use, but, trust me, 90% of the time, I leave it at sitting height.
             </Tool>
-            <Tool title=" DXRacer K-Series KS11/N">
+            <Tool title="DXRacer K-Series KS11/N">
               This is a gaming chair. I don't play games anymore but I was
               looking for something comfortable to sit on for long hours and not
               so expensive. I like it.
@@ -121,10 +122,6 @@ export default function Uses() {
             <Tool title="Grammarly">
               I'm not a native English speaker. Grammarly is helping me a lot in
               fixing language issues and making my writing clear.
-            </Tool>
-            <Tool title="Centered">
-              It helps keeping me focused on the task at hand. I use it to do
-              the work and get some momentum going.
             </Tool>
           </ToolsSection>
         </div>
