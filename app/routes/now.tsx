@@ -50,7 +50,7 @@ export default function Now() {
     <>
       <Container className="mt-16 sm:mt-32">
         <header className="max-w-2xl">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
             It is important to constantly be doing something. This is what I'm
             doing now
           </h1>
@@ -88,6 +88,13 @@ export default function Now() {
             </NowSection>
             <NowSection title="Building">
               <Activity
+                href="https://ivosantiago.com/blog"
+                eyebrow="This website"
+                title="A blog section"
+                description="I think spending my time writing about what I'm learning and doing is a good way to retain knowledge and share it with others. I'm working on a blog section for the website instead of sharing content on Twitter/X."
+                cta="Check it out"
+              />
+              <Activity
                 href="https://www.landsbattle.me/#"
                 eyebrow="Lands Battle"
                 title="A card game for Upland players"
@@ -95,7 +102,7 @@ export default function Now() {
                 cta="Check it out"
               />
             </NowSection>
-            <NowSection title="Tech">
+            {/* <NowSection title="Tech">
               <Activity
                 href="https://www.akitaonrails.com/2023/03/02/akitando-139-entendendo-como-containers-funcionam"
                 eyebrow="Docker & containers"
@@ -124,7 +131,7 @@ export default function Now() {
                 title="Reflection on 2023 and plans for 2024"
                 description='I don’t do resolutions for new year but I do like to reflect on what I did and think about what I want to do. Last year was all about Noah. Learning to be a father is a never ending task for sure but I feel like I know a couple things now. Both about me and him. This year I want to go back to myself a little more. Not in a selfish way but focusing on the things I want to learn and do. Kinda like the flight attendants say on every flight “put your mask first".'
               />
-            </NowSection>
+            </NowSection> */}
           </div>
         </div>
       </Container>
