@@ -72,7 +72,7 @@ export default function Now() {
             , too.
           </p>
           <p className="text-base text-zinc-600 dark:text-zinc-400">
-            Updated January 3rd, 2024, from Vi&ccedil;osa, Brazil. 🌎
+            Updated April 17th, 2024, from Belo Horizonte, Brazil. 🌎
           </p>
         </header>
         <div className="mt-16 sm:mt-20">
@@ -83,13 +83,6 @@ export default function Now() {
                 eyebrow="Will Larson"
                 title="Staff Engineer"
                 description="As I'm starting to consider transitioning to a more senior role and many people recommended this book I'm listening to it on Audible. There are great lessons from the very beginning."
-              />
-              <Activity
-                href="https://sive.rs/n"
-                eyebrow="Derick Sivers"
-                title="Hell Yeah or No"
-                description='"Overwhelmed? If you feel anything less than “hell yeah!” about something, say no. We say yes too often. By saying no to almost everything, you leave space and time in your life to throw yourself completely into the few things that matter most."'
-                cta="Get it at Sivers' website"
               />
             </NowSection>
             <NowSection title="Building">
@@ -107,6 +100,13 @@ export default function Now() {
                 description="A dear friend of mine asked if I could help him to fix his game. I'm working on it and it's been a lot of fun. I hope to have it ready by the end of the month."
                 cta="Check it out"
               />
+              <Activity
+                href="https://vercel.com/"
+                eyebrow="Vercel.com"
+                title="Migrating this website"
+                description="I was not happy hosting this website at Fly.io. I couldn't find a way to redirect www, because I was on the free plan I had to deal with cold start and deploying required a small fly file. Using Vercel was just 'it works' with the bonus of having a super easy deploy. I'm happy now."
+                cta="Vercel website"
+              />
             </NowSection>
             <NowSection title="Tech">
               <Activity
@@ -115,6 +115,13 @@ export default function Now() {
                 title="Learning Laravel"
                 description="I was looking for something new to learn since I'm mostly working with React, Node.js and TypeScript. I decided to give Laravel a try. Even tho I've done PHP projects before it was a long time ago so I decided to follow the entire 'Learn Laravel Path' on Laracast. It's been a lot of fun. I'm also considering to write about it on the blog."
                 cta="Laracast website"
+              />
+              <Activity
+                href="https://nextjs.org/"
+                eyebrow="Old language, new framework"
+                title="Next.js"
+                description="I'm giving another chance to Next.js for my future projects. Nothing much to say yet but using Remix required me to migrate/recreate so many libs and components that were ready for Next."
+                cta="Check it out"
               />
             </NowSection>
           </div>
