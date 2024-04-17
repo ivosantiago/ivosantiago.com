@@ -20,8 +20,4 @@ This starts your app in development mode, rebuilding assets on file changes.
 
 ## Deployment
 
-From the terminal:
-
-```sh
-fly deploy
-```
+Just push to main. You are all set.
