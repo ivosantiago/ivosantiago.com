@@ -1,11 +1,13 @@
-import { useId } from "react";
+import { useId } from 'react'
 
-type Props = {
-  title?: string;
-};
-
-export function Section({ title, children }: React.PropsWithChildren<Props>) {
-  let id = useId();
+export function Section({
+  title,
+  children,
+}: {
+  title: string
+  children: React.ReactNode
+}) {
+  let id = useId()
 
   return (
     <section
@@ -22,5 +24,5 @@ export function Section({ title, children }: React.PropsWithChildren<Props>) {
         <div className="md:col-span-3">{children}</div>
       </div>
     </section>
-  );
+  )
 }
