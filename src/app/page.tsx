@@ -3,7 +3,6 @@ import Link from 'next/link';
 import clsx from 'clsx';
 
 import { Button } from '@/components/Button';
-import { Card } from '@/components/Card';
 import { Container } from '@/components/Container';
 import {
   GitHubIcon,
@@ -16,13 +15,11 @@ import logoHekima from '@/images/logos/hekima.png';
 import logoGoodTime from '@/images/logos/goodtime.png';
 import logoCareMessage from '@/images/logos/caremessage.png';
 import logoAvenueCode from '@/images/logos/avenue-code.png';
-import image1 from '@/images/photos/image-1.jpg';
-import image2 from '@/images/photos/image-2.jpg';
-import image3 from '@/images/photos/image-3.jpg';
-import image4 from '@/images/photos/image-4.jpg';
-import image5 from '@/images/photos/image-5.jpg';
-import { type ArticleWithSlug, getAllArticles } from '@/lib/articles';
-import { formatDate } from '@/lib/formatDate';
+import paris from '@/images/unsplash/cyril-mzn-WSvth_lwCi0-unsplash.jpg';
+import sf from '@/images/unsplash/rezaul-karim-102abqkKhbY-unsplash.jpg';
+import vicosa from '@/images/unsplash/marco-tulio-de-miranda-NJrRhmQPLZc-unsplash.jpg';
+import dublin from '@/images/unsplash/anna-church-VM3u6iDvWDg-unsplash.jpg';
+import london from '@/images/unsplash/benjamin-davies-Oja2ty_9ZLM-unsplash.jpg';
 
 function BriefcaseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -194,24 +191,24 @@ function Photos() {
   ];
   const placesIVisited = [
     {
-      src: 'https://images.unsplash.com/photo-1549144511-f099e773c147?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
-      alt: 'A photo of Paris',
+      file: paris,
+      alt: 'The Eiffel Tower in Paris. Photo from Cyril Mzn on Unsplash',
     },
     {
-      src: 'https://images.unsplash.com/photo-1471306224500-6d0d218be372?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
-      alt: 'A photo of San Francisco',
+      file: sf,
+      alt: 'The California Street in San Francisco. Photo from Rezaul Karim on Unsplash',
     },
     {
-      src: 'https://images.unsplash.com/photo-1625005437510-4d6f5beefd0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2373&q=80',
-      alt: 'A photo of University of Viçosa',
+      file: vicosa,
+      alt: 'Building Arthur Bernardes at University of Viçosa campus. Photo from Marco Túlio de Miranda on Unsplash',
     },
     {
-      src: 'https://images.unsplash.com/photo-1564959130747-897fb406b9af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
-      alt: 'A photo of Dublin',
+      file: dublin,
+      alt: 'Temple Bar in Dublin. Photo from Anna Church on Unsplash',
     },
     {
-      src: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80',
-      alt: 'A photo of London',
+      file: london,
+      alt: 'A view of River Thames in London. Photo from Benjamin Davies on Unsplash',
     },
   ];
 
@@ -221,16 +218,14 @@ function Photos() {
         {/* {[image1, image2, image3, image4, image5].map((image, imageIndex) => ( */}
         {placesIVisited.map((image, imageIndex) => (
           <div
-            key={image.src}
+            key={image.alt}
             className={clsx(
               'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
               rotations[imageIndex % rotations.length],
             )}
           >
             <Image
-              // src={image}
-              // alt=""
-              src={image.src}
+              src={image.file}
               alt={image.alt}
               sizes="(min-width: 640px) 18rem, 11rem"
               className="absolute inset-0 h-full w-full object-cover"
@@ -280,7 +275,7 @@ export default async function Home() {
           </div>
         </div>
       </Container>
-      {/* <Photos /> */}
+      <Photos />
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16"></div>
