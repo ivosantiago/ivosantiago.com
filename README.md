@@ -4,7 +4,7 @@ This is my website.
 
 ## What's in the stack
 
-- [Remix.run](https://remix.run) using the [Indie Stack](https://github.com/remix-run/indie-stack)
+- [Next.js](https://nextjs.org/)
 - Styling with [Tailwind](https://tailwindcss.com/)
 - Static Types with [TypeScript](https://typescriptlang.org)
 
