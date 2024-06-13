@@ -1,28 +1,28 @@
-import Image, { type ImageProps } from 'next/image'
-import Link from 'next/link'
-import clsx from 'clsx'
+import Image, { type ImageProps } from 'next/image';
+import Link from 'next/link';
+import clsx from 'clsx';
 
-import { Button } from '@/components/Button'
-import { Card } from '@/components/Card'
-import { Container } from '@/components/Container'
+import { Button } from '@/components/Button';
+import { Card } from '@/components/Card';
+import { Container } from '@/components/Container';
 import {
   GitHubIcon,
   InstagramIcon,
   LinkedInIcon,
   XIcon,
-} from '@/components/SocialIcons'
-import logoAppcues from "@/images/logos/appcues.png";
-import logoHekima from "@/images/logos/hekima.png";
-import logoGoodTime from "@/images/logos/goodtime.png";
-import logoCareMessage from "@/images/logos/caremessage.png";
-import logoAvenueCode from "@/images/logos/avenue-code.png";
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
-import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
-import { formatDate } from '@/lib/formatDate'
+} from '@/components/SocialIcons';
+import logoAppcues from '@/images/logos/appcues.png';
+import logoHekima from '@/images/logos/hekima.png';
+import logoGoodTime from '@/images/logos/goodtime.png';
+import logoCareMessage from '@/images/logos/caremessage.png';
+import logoAvenueCode from '@/images/logos/avenue-code.png';
+import image1 from '@/images/photos/image-1.jpg';
+import image2 from '@/images/photos/image-2.jpg';
+import image3 from '@/images/photos/image-3.jpg';
+import image4 from '@/images/photos/image-4.jpg';
+import image5 from '@/images/photos/image-5.jpg';
+import { type ArticleWithSlug, getAllArticles } from '@/lib/articles';
+import { formatDate } from '@/lib/formatDate';
 
 function BriefcaseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -44,7 +44,7 @@ function BriefcaseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
         className="stroke-zinc-400 dark:stroke-zinc-500"
       />
     </svg>
-  )
+  );
 }
 
 function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
@@ -57,38 +57,38 @@ function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
         strokeLinejoin="round"
       />
     </svg>
-  )
+  );
 }
 
 function SocialLink({
   icon: Icon,
   ...props
 }: React.ComponentPropsWithoutRef<typeof Link> & {
-  icon: React.ComponentType<{ className?: string }>
+  icon: React.ComponentType<{ className?: string }>;
 }) {
   return (
     <Link className="group -m-1 p-1" {...props}>
       <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
     </Link>
-  )
+  );
 }
 
 interface Role {
-  company: string
-  title: string
-  logo: ImageProps['src']
-  start: string | { label: string; dateTime: string }
-  end: string | { label: string; dateTime: string }
+  company: string;
+  title: string;
+  logo: ImageProps['src'];
+  start: string | { label: string; dateTime: string };
+  end: string | { label: string; dateTime: string };
 }
 
 function Role({ role }: { role: Role }) {
   let startLabel =
-    typeof role.start === 'string' ? role.start : role.start.label
+    typeof role.start === 'string' ? role.start : role.start.label;
   let startDate =
-    typeof role.start === 'string' ? role.start : role.start.dateTime
+    typeof role.start === 'string' ? role.start : role.start.dateTime;
 
-  let endLabel = typeof role.end === 'string' ? role.end : role.end.label
-  let endDate = typeof role.end === 'string' ? role.end : role.end.dateTime
+  let endLabel = typeof role.end === 'string' ? role.end : role.end.label;
+  let endDate = typeof role.end === 'string' ? role.end : role.end.dateTime;
 
   return (
     <li className="flex gap-4">
@@ -115,50 +115,50 @@ function Role({ role }: { role: Role }) {
         </dd>
       </dl>
     </li>
-  )
+  );
 }
 
 function Resume() {
   let resume: Array<Role> = [
     {
-      company: "Appcues",
-      title: "Senior Software Engineer",
+      company: 'Appcues',
+      title: 'Senior Software Engineer',
       logo: logoAppcues,
-      start: "2022",
+      start: '2022',
       end: {
-        label: "Present",
+        label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
-      company: "GoodTime.io",
-      title: "Senior Software Engineer",
+      company: 'GoodTime.io',
+      title: 'Senior Software Engineer',
       logo: logoGoodTime,
-      start: "2017",
-      end: "2022",
+      start: '2017',
+      end: '2022',
     },
     {
-      company: "CareMessage",
-      title: "Software Engineer",
+      company: 'CareMessage',
+      title: 'Software Engineer',
       logo: logoCareMessage,
-      start: "2015",
-      end: "2017",
+      start: '2015',
+      end: '2017',
     },
     {
-      company: "Hekima",
-      title: "Software Engineer",
+      company: 'Hekima',
+      title: 'Software Engineer',
       logo: logoHekima,
-      start: "2014",
-      end: "2015",
+      start: '2014',
+      end: '2015',
     },
     {
-      company: "Avenue Code",
-      title: "Software Engineer",
+      company: 'Avenue Code',
+      title: 'Software Engineer',
       logo: logoAvenueCode,
-      start: "2012",
-      end: "2014",
+      start: '2012',
+      end: '2014',
     },
-  ]
+  ];
 
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
@@ -171,38 +171,47 @@ function Resume() {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button href="/assets/cv_ivo_santiago.pdf"
+      <Button
+        href="/assets/cv_ivo_santiago.pdf"
         // fileName="Ivo Furtado Santiago CV"
-        variant="secondary" className="group mt-6 w-full">
+        variant="secondary"
+        className="group mt-6 w-full"
+      >
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
     </div>
-  )
+  );
 }
 
 function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+  let rotations = [
+    'rotate-2',
+    '-rotate-2',
+    'rotate-2',
+    'rotate-2',
+    '-rotate-2',
+  ];
   const placesIVisited = [
     {
-      src: "https://images.unsplash.com/photo-1549144511-f099e773c147?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-      alt: "A photo of Paris",
+      src: 'https://images.unsplash.com/photo-1549144511-f099e773c147?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
+      alt: 'A photo of Paris',
     },
     {
-      src: "https://images.unsplash.com/photo-1471306224500-6d0d218be372?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-      alt: "A photo of San Francisco",
+      src: 'https://images.unsplash.com/photo-1471306224500-6d0d218be372?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
+      alt: 'A photo of San Francisco',
     },
     {
-      src: "https://images.unsplash.com/photo-1625005437510-4d6f5beefd0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2373&q=80",
-      alt: "A photo of University of Viçosa",
+      src: 'https://images.unsplash.com/photo-1625005437510-4d6f5beefd0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2373&q=80',
+      alt: 'A photo of University of Viçosa',
     },
     {
-      src: "https://images.unsplash.com/photo-1564959130747-897fb406b9af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-      alt: "A photo of Dublin",
+      src: 'https://images.unsplash.com/photo-1564959130747-897fb406b9af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
+      alt: 'A photo of Dublin',
     },
     {
-      src: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80",
-      alt: "A photo of London",
+      src: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80',
+      alt: 'A photo of London',
     },
   ];
 
@@ -212,12 +221,12 @@ function Photos() {
         {/* {[image1, image2, image3, image4, image5].map((image, imageIndex) => ( */}
         {placesIVisited.map((image, imageIndex) => (
           <div
-          key={image.src}
-          className={clsx(
-            'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
-            rotations[imageIndex % rotations.length],
+            key={image.src}
+            className={clsx(
+              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
+              rotations[imageIndex % rotations.length],
             )}
-            >
+          >
             <Image
               // src={image}
               // alt=""
@@ -230,7 +239,7 @@ function Photos() {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
 export default async function Home() {
@@ -281,5 +290,5 @@ export default async function Home() {
         </div>
       </Container>
     </>
-  )
+  );
 }

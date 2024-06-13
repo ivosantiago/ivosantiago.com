@@ -1,13 +1,13 @@
-import Link from 'next/link'
+import Link from 'next/link';
 
-import { ContainerInner, ContainerOuter } from '@/components/Container'
+import { ContainerInner, ContainerOuter } from '@/components/Container';
 
 function NavLink({
   href,
   children,
 }: {
-  href: string
-  children: React.ReactNode
+  href: string;
+  children: React.ReactNode;
 }) {
   return (
     <Link
@@ -16,7 +16,7 @@ function NavLink({
     >
       {children}
     </Link>
-  )
+  );
 }
 
 export function Footer() {
@@ -31,7 +31,7 @@ export function Footer() {
                 <NavLink href="/uses">Uses</NavLink>
                 <NavLink href="/now">Now</NavLink>
               </div>
-              <div className="text-sm text-zinc-400 dark:text-zinc-500 text-right">
+              <div className="text-right text-sm text-zinc-400 dark:text-zinc-500">
                 <p>&copy; {new Date().getFullYear()} Ivo Santiago.</p>
                 <p>All rights reserved.</p>
                 <p>This site does not track you. 🍪</p>
@@ -41,5 +41,5 @@ export function Footer() {
         </div>
       </ContainerOuter>
     </footer>
-  )
+  );
 }

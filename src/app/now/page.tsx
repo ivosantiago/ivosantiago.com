@@ -1,6 +1,6 @@
-;import { Card } from "@/components/Card";
-import { Container } from "@/components/Container";
-import { Section } from "@/components/Section";
+import { Card } from '@/components/Card';
+import { Container } from '@/components/Container';
+import { Section } from '@/components/Section';
 
 function NowSection({
   children,
@@ -35,8 +35,8 @@ function Activity({ title, description, eyebrow, cta, href }: ActivityProps) {
 }
 
 export const metadata = {
-  title: "Now",
-  description: "This is what I'm up to now.", 
+  title: 'Now',
+  description: "This is what I'm up to now.",
 };
 
 export default function Now() {
@@ -49,14 +49,14 @@ export default function Now() {
             doing now
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            This is a{" "}
+            This is a{' '}
             <a
               className="text-teal-500 dark:text-teal-400"
               href="https://nownownow.com/about"
             >
               now page
             </a>
-            , and if you have your own site,{" "}
+            , and if you have your own site,{' '}
             <a
               className="text-teal-500 dark:text-teal-400"
               href="https://nownownow.com/about"

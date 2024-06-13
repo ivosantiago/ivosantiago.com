@@ -1,6 +1,6 @@
-import { Card } from '@/components/Card'
-import { Section } from '@/components/Section'
-import { SimpleLayout } from '@/components/SimpleLayout'
+import { Card } from '@/components/Card';
+import { Section } from '@/components/Section';
+import { SimpleLayout } from '@/components/SimpleLayout';
 
 function ToolsSection({
   children,
@@ -12,7 +12,7 @@ function ToolsSection({
         {children}
       </ul>
     </Section>
-  )
+  );
 }
 
 function Tool({
@@ -20,9 +20,9 @@ function Tool({
   href,
   children,
 }: {
-  title: string
-  href?: string
-  children: React.ReactNode
+  title: string;
+  href?: string;
+  children: React.ReactNode;
 }) {
   return (
     <Card as="li">
@@ -31,13 +31,13 @@ function Tool({
       </Card.Title>
       <Card.Description>{children}</Card.Description>
     </Card>
-  )
+  );
 }
 
 export const metadata = {
   title: 'Uses',
   description: 'Software I use, gadgets I love, and other things I recommend.',
-}
+};
 
 export default function Uses() {
   return (
@@ -59,9 +59,8 @@ export default function Uses() {
             looking for a new monitor.
           </Tool>
           <Tool title="AirPods Pro 2">
-            I was very skeptical about this earbuds but it was a great
-            surprise so far. I use it all day long, the noise canceling is
-            perfect.
+            I was very skeptical about this earbuds but it was a great surprise
+            so far. I use it all day long, the noise canceling is perfect.
           </Tool>
           <Tool title="Keychron K2">
             I like a lot the brown switches. The tactile feedback of this
@@ -70,17 +69,17 @@ export default function Uses() {
           </Tool>
           <Tool title="Logitec M720 Triathlon mouse">
             Following the same idea of the keyboard, I was looking for a
-            comfortable mouse that I could use with my laptop and other
-            devices. It also syncs wirelessly with three devices as well.
+            comfortable mouse that I could use with my laptop and other devices.
+            It also syncs wirelessly with three devices as well.
           </Tool>
           <Tool title="GenioDesk Plus">
             This is a height-adjustable desk. I like it because it's easy to
             use, but, trust me, 90% of the time, I leave it at sitting height.
           </Tool>
           <Tool title="DXRacer K-Series KS11/N">
-            This is a gaming chair. I don't play games anymore but I was
-            looking for something comfortable to sit on for long hours and not
-            so expensive. I like it.
+            This is a gaming chair. I don't play games anymore but I was looking
+            for something comfortable to sit on for long hours and not so
+            expensive. I like it.
           </Tool>
         </ToolsSection>
         <ToolsSection title="Development tools">
@@ -105,17 +104,17 @@ export default function Uses() {
           <Tool title="Raycast">
             I used to use Alfred but I switched to Raycast. The plan was to
             create scripts to automate my daily tasks but I didn't get to it
-            yet. I still use it to open apps and do some basic stuff and I
-            don't miss anything from Alfred.
+            yet. I still use it to open apps and do some basic stuff and I don't
+            miss anything from Alfred.
           </Tool>
           <Tool title="Monosnap">
-            This is a handy tool for taking screenshots and picking colors
-            from images and pages.
+            This is a handy tool for taking screenshots and picking colors from
+            images and pages.
           </Tool>
           <Tool title="Krisp">
-            Sometimes the sound around is noisy it can be a problem,
-            especially at meetings. Now I can go anywhere and do calls not
-            worrying if the background noise is bad.
+            Sometimes the sound around is noisy it can be a problem, especially
+            at meetings. Now I can go anywhere and do calls not worrying if the
+            background noise is bad.
           </Tool>
           <Tool title="Grammarly">
             I'm not a native English speaker. Grammarly is helping me a lot in
@@ -124,5 +123,5 @@ export default function Uses() {
         </ToolsSection>
       </div>
     </SimpleLayout>
-  )
+  );
 }
