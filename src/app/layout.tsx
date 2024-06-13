@@ -13,11 +13,6 @@ export const metadata: Metadata = {
   },
   description:
     "Hello 👋 I'm Ivo, a software engineer living in Brazil.",
-  alternates: {
-    types: {
-      'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
-    },
-  },
 }
 
 export default function RootLayout({

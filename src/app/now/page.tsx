@@ -1,7 +1,6 @@
-import type { MetaFunction } from "@remix-run/react";
-import { Card } from "~/components/Card";
-import { Container } from "~/components/Container";
-import { Section } from "~/components/Section";
+;import { Card } from "@/components/Card";
+import { Container } from "@/components/Container";
+import { Section } from "@/components/Section";
 
 function NowSection({
   children,
@@ -25,7 +24,7 @@ type ActivityProps = {
 function Activity({ title, description, eyebrow, cta, href }: ActivityProps) {
   return (
     <Card as="article">
-      <Card.Title as="h3" to={href}>
+      <Card.Title as="h3" href={href}>
         {title}
       </Card.Title>
       <Card.Eyebrow decorate>{eyebrow}</Card.Eyebrow>
@@ -35,14 +34,9 @@ function Activity({ title, description, eyebrow, cta, href }: ActivityProps) {
   );
 }
 
-export const meta: MetaFunction = () => {
-  return [
-    { title: "About - Ivo Santiago" },
-    {
-      name: "description",
-      content: "This is what I'm up to now.",
-    },
-  ];
+export const metadata = {
+  title: "Now",
+  description: "This is what I'm up to now.", 
 };
 
 export default function Now() {
@@ -99,13 +93,6 @@ export default function Now() {
                 title="A card game for Upland players"
                 description="A dear friend of mine asked if I could help him to fix his game. I'm working on it and it's been a lot of fun. I hope to have it ready by the end of the month."
                 cta="Check it out"
-              />
-              <Activity
-                href="https://vercel.com/"
-                eyebrow="Vercel.com"
-                title="Migrating this website"
-                description="I was not happy hosting this website at Fly.io. I couldn't find a way to redirect www, because I was on the free plan I had to deal with cold start and deploying required a small fly file. Using Vercel was just 'it works' with the bonus of having a super easy deploy. I'm happy now."
-                cta="Vercel website"
               />
             </NowSection>
             <NowSection title="Tech">
