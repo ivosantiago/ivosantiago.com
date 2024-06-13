@@ -49,14 +49,14 @@ export default function Uses() {
         <ToolsSection title="Workstation">
           <Tool title="14” MacBook Pro M1, 16GB RAM (2021)">
             This is my work machine. I have a personal Windows machine but
-            honestly, I don't use it that much. Before that, I used an Apple
-            MacBook Pro 13.3" (2012), 16 GB RAM, for years. I don't feel like
-            updating computers very often.
+            honestly, I don&apos;t use it that much. Before that, I used an
+            Apple MacBook Pro 13.3&quot; (2012), 16 GB RAM, for years. I
+            don&apos;t feel like updating computers very often.
           </Tool>
           <Tool title="LG HDR 34,5” Ultra Wide display">
             This is *not* a great monitor. I bought it because I want to try a
-            big monitor and it was cheap. I don't think I would rebuy it. I'm
-            looking for a new monitor.
+            big monitor and it was cheap. I don&apos;t think I would rebuy it.
+            I&apos;m looking for a new monitor.
           </Tool>
           <Tool title="AirPods Pro 2">
             I was very skeptical about this earbuds but it was a great surprise
@@ -73,19 +73,20 @@ export default function Uses() {
             It also syncs wirelessly with three devices as well.
           </Tool>
           <Tool title="GenioDesk Plus">
-            This is a height-adjustable desk. I like it because it's easy to
-            use, but, trust me, 90% of the time, I leave it at sitting height.
+            This is a height-adjustable desk. I like it because it&apos;s easy
+            to use, but, trust me, 90% of the time, I leave it at sitting
+            height.
           </Tool>
           <Tool title="DXRacer K-Series KS11/N">
-            This is a gaming chair. I don't play games anymore but I was looking
-            for something comfortable to sit on for long hours and not so
-            expensive. I like it.
+            This is a gaming chair. I don&apos;t play games anymore but I was
+            looking for something comfortable to sit on for long hours and not
+            so expensive. I like it.
           </Tool>
         </ToolsSection>
         <ToolsSection title="Development tools">
           <Tool title="Visual Studio Code">
             I used to be an Atom user but I switched to VS Code because of the
-            extensions. I don't mind being out of the Vim world. I know the
+            extensions. I don&apos;t mind being out of the Vim world. I know the
             basics of it.
           </Tool>
           <Tool title="TablePlus">
@@ -96,16 +97,16 @@ export default function Uses() {
         </ToolsSection>
         <ToolsSection title="Design">
           <Tool title="Figma">
-            I'm not a designer but I like good design tools. Figma is easy to
-            use and everywhere I work, they use it.
+            I&apos;m not a designer but I like good design tools. Figma is easy
+            to use and everywhere I work, they use it.
           </Tool>
         </ToolsSection>
         <ToolsSection title="Productivity">
           <Tool title="Raycast">
             I used to use Alfred but I switched to Raycast. The plan was to
-            create scripts to automate my daily tasks but I didn't get to it
-            yet. I still use it to open apps and do some basic stuff and I don't
-            miss anything from Alfred.
+            create scripts to automate my daily tasks but I didn&apos;t get to
+            it yet. I still use it to open apps and do some basic stuff and I
+            don&apos;t miss anything from Alfred.
           </Tool>
           <Tool title="Monosnap">
             This is a handy tool for taking screenshots and picking colors from
@@ -117,8 +118,8 @@ export default function Uses() {
             background noise is bad.
           </Tool>
           <Tool title="Grammarly">
-            I'm not a native English speaker. Grammarly is helping me a lot in
-            fixing language issues and making my writing clear.
+            I&apos;m not a native English speaker. Grammarly is helping me a lot
+            in fixing language issues and making my writing clear.
           </Tool>
         </ToolsSection>
       </div>

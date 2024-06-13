@@ -76,27 +76,29 @@ export default function About() {
             <p>
               Based on what I did as a kid, no one would ever expect a carrier
               in the software industry. I was raised in a small town where I
-              spent most of the time on a farm and didn't have internet access
-              at home until I was 17. Most of my time was around cows, horses,
-              or practicing sports.
+              spent most of the time on a farm and didn&apos;t have internet
+              access at home until I was 17. Most of my time was around cows,
+              horses, or practicing sports.
             </p>
             <p>
               When it was time to pick a college major, it came as a surprise to
-              my family me deciding to do computer science. I've played video
-              games and I've been fascinated by technology. How could I not be?
+              my family me deciding to do computer science. Ive played video
+              games and I&apos;ve been fascinated by technology. How could I not
+              be?
             </p>
             <p>
               Despite my major, another place I spent a lot of time was the
-              sports center. I've never been fit but the nerd side of physical
-              training fascinated me. I like to try all kinds of sports and I'm
-              always looking for new challenges. My favorites are judo and
-              swimming.
+              sports center. I&apos;ve never been fit but the nerd side of
+              physical training fascinated me. I like to try all kinds of sports
+              and I&apos;m always looking for new challenges. My favorites are
+              judo and swimming.
             </p>
             <p>
               After college, I lived in Dublin, Ireland, for a year. After that
-              I moved to the US for six months and then back to Brazil. I've
-              been here ever since. Today, I’m the father of Noah. He's the best
-              thing that ever happened to me. We have a lot of fun together.
+              I moved to the US for six months and then back to Brazil.
+              I&apos;ve been here ever since. Today, I&apos;m the father of
+              Noah. He&apos;s the best thing that ever happened to me. We have a
+              lot of fun together.
             </p>
           </div>
         </div>

@@ -251,10 +251,10 @@ export default async function Home() {
             Software engineer and sports enthusiast.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Hi, I'm Ivo Santiago. I'm a software engineer who likes all types of
-            sports. You can find me trying different things when I'm not at the
-            computer - from judo to swimming, passing through rugby, and
-            running. Whatever my knees still allow me to do.
+            Hi, I&apos;m Ivo Santiago. I&apos;m a software engineer who likes
+            all types of sports. You can find me trying different things when
+            I&apos;m not at the computer - from judo to swimming, passing
+            through rugby, and running. Whatever my knees still allow me to do.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
