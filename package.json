@@ -14,7 +14,7 @@
     "@vercel/analytics": "^1.6.1",
     "clsx": "^2.1.0",
     "fast-glob": "^3.2.11",
-    "next": "^15.5.10",
+    "next": "^16.1.6",
     "next-themes": "^0.3.0",
     "react": "19.0.0",
     "react-dom": "19.0.0"
