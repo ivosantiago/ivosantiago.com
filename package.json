@@ -10,7 +10,7 @@
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
-    "@headlessui/react": "^2.1.2",
+    "@headlessui/react": "^2.2.9",
     "@vercel/analytics": "^1.6.1",
     "clsx": "^2.1.0",
     "fast-glob": "^3.2.11",
