@@ -11,13 +11,18 @@
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
     "@headlessui/react": "^2.2.9",
+    "@tailwindcss/typography": "^0.5.19",
     "@vercel/analytics": "^1.6.1",
+    "@vercel/blob": "^2.0.1",
     "clsx": "^2.1.0",
     "fast-glob": "^3.2.11",
+    "gray-matter": "^4.0.3",
     "next": "^15.5.10",
     "next-themes": "^0.3.0",
     "react": "19.0.0",
-    "react-dom": "19.0.0"
+    "react-dom": "19.0.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.18",
