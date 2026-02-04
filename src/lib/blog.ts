@@ -9,6 +9,7 @@ export interface BlogPost {
   date: string;
   published: boolean;
   content: string;
+  image?: string;
 }
 
 export interface BlogPostMeta {
@@ -17,6 +18,7 @@ export interface BlogPostMeta {
   description: string;
   date: string;
   published: boolean;
+  image?: string;
 }
 
 const CONTENT_DIR = path.join(process.cwd(), 'content', 'blog');
@@ -73,6 +75,7 @@ export async function getPost(slug: string): Promise<BlogPost | null> {
       date: data.date || new Date().toISOString(),
       published: data.published ?? false,
       content,
+      image: data.image || undefined,
     };
   } catch {
     return null;
@@ -84,12 +87,16 @@ export async function savePost(post: BlogPost): Promise<void> {
 
   const filePath = path.join(CONTENT_DIR, `${post.slug}.md`);
 
-  const frontmatter = {
+  const frontmatter: Record<string, unknown> = {
     title: post.title,
     description: post.description,
     date: post.date,
     published: post.published,
   };
+
+  if (post.image) {
+    frontmatter.image = post.image;
+  }
 
   const fileContent = matter.stringify(post.content, frontmatter);
   await fs.writeFile(filePath, fileContent, 'utf-8');
