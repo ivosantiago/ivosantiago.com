@@ -16,6 +16,7 @@ const ITEMS: Array<Item> = [
   { id: 'blog', label: 'Launch a blog', done: false },
   { id: 'about', label: 'Refresh the About page', done: true },
   { id: 'now', label: 'Update the Now page', done: false },
+  { id: 'uses', label: 'Refresh the Uses page', done: true },
   { id: 'projects', label: 'List my side projects here', done: false },
   { id: 'darkmode', label: 'Ship dark mode', done: true },
   { id: 'meta', label: 'Build this very to-do list', done: true },

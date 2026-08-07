@@ -47,11 +47,13 @@ export default function Uses() {
     >
       <div className="space-y-20">
         <ToolsSection title="Workstation">
-          <Tool title="14” MacBook Pro M1, 16GB RAM (2021)">
-            This is my work machine. I have a personal Windows machine but
-            honestly, I don&apos;t use it that much. Before that, I used an
-            Apple MacBook Pro 13.3&quot; (2012), 16 GB RAM, for years. I
-            don&apos;t feel like updating computers very often.
+          <Tool title="Mac mini M4, 24GB RAM (2024)">
+            This is my work machine now. It&apos;s tiny, silent, and way faster
+            than I need. Before this I worked on a 14&quot; MacBook Pro M1
+            (2021), but I barely moved it around, so a little desktop made more
+            sense. I have a personal Windows machine too but honestly, I
+            don&apos;t use it that much. As you can tell, I don&apos;t feel like
+            updating computers very often.
           </Tool>
           <Tool title="LG HDR 34,5” Ultra Wide display">
             This is *not* a great monitor. I bought it because I want to try a
@@ -77,22 +79,33 @@ export default function Uses() {
             to use, but, trust me, 90% of the time, I leave it at sitting
             height.
           </Tool>
-          <Tool title="DXRacer K-Series KS11/N">
-            This is a gaming chair. I don&apos;t play games anymore but I was
-            looking for something comfortable to sit on for long hours and not
-            so expensive. I like it.
+          <Tool title="Flexform Tecton (Night Blue Unique)">
+            This one looks way cooler — it&apos;s all mesh, adjusts in every
+            direction, and reclines based on your weight. Honestly though, my old
+            gaming chair was more comfortable, and I liked it better. I only
+            replaced it because it was tearing apart. So it looks great, but I
+            still miss the comfort of the old one.
           </Tool>
         </ToolsSection>
         <ToolsSection title="Development tools">
-          <Tool title="Visual Studio Code">
-            I used to be an Atom user but I switched to VS Code because of the
-            extensions. I don&apos;t mind being out of the Vim world. I know the
-            basics of it.
+          <Tool title="T3 Code">
+            This is where I spend most of my day now. It&apos;s an open-source
+            app that gives AI coding agents like Claude Code a proper interface —
+            git worktrees, diffs, and pull requests, all in one place. I can run
+            a few agents in parallel across projects, which still feels a little
+            like cheating.
           </Tool>
-          <Tool title="TablePlus">
-            Great software for working with databases. It has saved me from
-            building about a thousand admin interfaces for my various projects
-            over the years.
+          <Tool title="Claude Code">
+            Anthropic&apos;s coding agent that lives in the terminal. It reads
+            the codebase, runs commands, and handles the boring parts of git for
+            me. Most of the time I let it drive and I just review. This very page
+            was updated with it, by the way.
+          </Tool>
+          <Tool title="Cursor">
+            A VS Code fork built around AI. Since it&apos;s basically VS Code,
+            all my old extensions and shortcuts just work, so it&apos;s my go-to
+            when I want a familiar editor with autocomplete that reads my mind
+            (most of the time).
           </Tool>
         </ToolsSection>
         <ToolsSection title="Design">
@@ -108,14 +121,17 @@ export default function Uses() {
             it yet. I still use it to open apps and do some basic stuff and I
             don&apos;t miss anything from Alfred.
           </Tool>
-          <Tool title="Monosnap">
-            This is a handy tool for taking screenshots and picking colors from
-            images and pages.
+          <Tool title="Maccy">
+            A lightweight, open-source clipboard manager. It keeps my copy
+            history and lets me paste anything back with a keyboard shortcut. It
+            does one thing and does it well, which is exactly what I want from a
+            tool like this.
           </Tool>
-          <Tool title="Krisp">
-            Sometimes the sound around is noisy it can be a problem, especially
-            at meetings. Now I can go anywhere and do calls not worrying if the
-            background noise is bad.
+          <Tool title="Wispr Flow">
+            Voice-to-text that actually works. I press a shortcut, talk, and it
+            drops clean, punctuated text into whatever I&apos;m using — even my
+            editor. As a non-native speaker, talking is often faster than typing,
+            and it cleans up my rambling for me.
           </Tool>
           <Tool title="Grammarly">
             I&apos;m not a native English speaker. Grammarly is helping me a lot
