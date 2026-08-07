@@ -11,6 +11,7 @@ import {
   LinkedInIcon,
   XIcon,
 } from '@/components/SocialIcons';
+import logoMoxie from '@/images/logos/moxie.png';
 import logoAppcues from '@/images/logos/appcues.png';
 import logoHekima from '@/images/logos/hekima.png';
 import logoGoodTime from '@/images/logos/goodtime.png';
@@ -119,14 +120,21 @@ function Role({ role }: { role: Role }) {
 function Resume() {
   const resume: Array<Role> = [
     {
-      company: 'Appcues',
-      title: 'Senior Software Engineer',
-      logo: logoAppcues,
-      start: '2022',
+      company: 'Moxie',
+      title: 'Software Engineer',
+      logo: logoMoxie,
+      start: '2025',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
+    },
+    {
+      company: 'Appcues',
+      title: 'Senior Software Engineer',
+      logo: logoAppcues,
+      start: '2022',
+      end: '2025',
     },
     {
       company: 'GoodTime.io',
