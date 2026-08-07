@@ -9,7 +9,7 @@ import {
   LinkedInIcon,
   XIcon,
 } from '@/components/SocialIcons';
-import noahImage from '@/images/noah.jpg';
+import walkingImage from '@/images/walking.jpg';
 
 function SocialLink({
   className,
@@ -59,8 +59,8 @@ export default function About() {
         <div className="lg:pl-20">
           <div className="max-w-xs px-2.5 lg:max-w-none">
             <Image
-              src={noahImage}
-              alt=""
+              src={walkingImage}
+              alt="Ivo walking down a farm lane holding hands with Noah and Levi"
               sizes="(min-width: 1024px) 32rem, 20rem"
               className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
             />
@@ -69,11 +69,12 @@ export default function About() {
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
             Hi, I’m Ivo Santiago 👋
-            <br />I live in Belo Horizonte, where I code and have fun with Noah.
+            <br />I live in Belo Horizonte, where I code and have fun with Noah
+            and Levi.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              Based on what I did as a kid, no one would ever expect a carrier
+              Based on what I did as a kid, no one would ever expect a career
               in the software industry. I was raised in a small town where I
               spent most of the time on a farm and didn&apos;t have internet
               access at home until I was 17. Most of my time was around cows,
@@ -81,23 +82,27 @@ export default function About() {
             </p>
             <p>
               When it was time to pick a college major, it came as a surprise to
-              my family me deciding to do computer science. Ive played video
-              games and I&apos;ve been fascinated by technology. How could I not
-              be?
+              my family me deciding to do computer science. I&apos;ve played
+              video games and I&apos;ve been fascinated by technology. How could
+              I not be?
             </p>
             <p>
               Despite my major, another place I spent a lot of time was the
-              sports center. I&apos;ve never been fit but the nerd side of
+              sports center. I&apos;ve never been fit, but the nerd side of
               physical training fascinated me. I like to try all kinds of sports
-              and I&apos;m always looking for new challenges. My favorites are
-              judo and swimming.
+              and I&apos;m always looking for new challenges. For years my go-tos
+              were judo and swimming, and lately I&apos;ve fallen hard for
+              Brazilian Jiu-Jitsu — turns out getting choked by strangers is a
+              great way to unwind. My knees have opinions about all of this, but
+              so far I&apos;m winning the argument.
             </p>
             <p>
               After college, I lived in Dublin, Ireland, for a year. After that
               I moved to the US for six months and then back to Brazil.
-              I&apos;ve been here ever since. Today, I&apos;m the father of
-              Noah. He&apos;s the best thing that ever happened to me. We have a
-              lot of fun together.
+              I&apos;ve been here ever since. Today, I&apos;m the father of two
+              little troublemakers, Noah and Levi. They&apos;re the best thing
+              that ever happened to me, and life with them is never quiet — we
+              have way too much fun together.
             </p>
           </div>
         </div>

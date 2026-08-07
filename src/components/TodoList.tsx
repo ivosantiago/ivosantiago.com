@@ -14,7 +14,7 @@ interface Item {
 // The list. To cross something off, flip `done` to true and deploy.
 const ITEMS: Array<Item> = [
   { id: 'blog', label: 'Launch a blog', done: false },
-  { id: 'about', label: 'Refresh the About page', done: false },
+  { id: 'about', label: 'Refresh the About page', done: true },
   { id: 'now', label: 'Update the Now page', done: false },
   { id: 'projects', label: 'List my side projects here', done: false },
   { id: 'darkmode', label: 'Ship dark mode', done: true },
